@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Compiling Test](https://github.com/mariospapaz/the_diamond_chase/actions/workflows/compile_test.yml/badge.svg)](https://github.com/mariospapaz/the_diamond_chase/actions/workflows/compile_test.yml)
+[![Compile Test](https://github.com/mariospapaz/the_diamond_chase/actions/workflows/blank.yml/badge.svg)](https://github.com/mariospapaz/the_diamond_chase/actions/workflows/blank.yml)
 
 </div>
 
