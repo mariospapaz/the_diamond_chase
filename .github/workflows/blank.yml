@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Run a multi-line script
+      - name: Compiling the project
         run: |
-          apt update && apt upgrade && apt install build-essential && apt install libncursesw5-dev && g++ *.cpp -lncursesw 
+          apt-get update && apt-get upgrade && apt-get install build-essential && apt-get install libncursesw5-dev && g++ *.cpp -lncursesw 
           
