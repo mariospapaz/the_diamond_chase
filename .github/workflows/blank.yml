@@ -16,7 +16,7 @@ jobs:
       
       - name: Compiling the project
         run: |
-          sudo apt-get update && apt-get upgrade 
-          sudo apt-get install build-essential && apt-get install libncursesw5-dev 
+          sudo apt-get update && sudo apt-get upgrade 
+          sudo apt-get install build-essential && sudo apt-get install libncursesw5-dev 
           g++ *.cpp -lncursesw 
           
