@@ -29,9 +29,11 @@ User must have `el_GR.UTF8` enabled in `/etc/locale.conf` in order to play the g
 Do you not have Greek preinstalled in your computer? that is okay here is a guide!
 Edit `/etc/locale.conf`, find and uncomment all `el_GR.` from the script.
 
-<img width="280" alt="Screen_Shot_2022-05-12_at_7 44 18_PM" src="https://user-images.githubusercontent.com/30930688/170873417-a03bf96d-18da-453a-b0f9-7ec38cb3920b.png">
+
 
 <img width="280" alt="Screen_Shot_2022-05-12_at_7 44 18_PM" src="https://user-images.githubusercontent.com/30930688/170873428-34d99fdf-84a3-4e4c-9e88-0bb44fc8840e.png">
+<img width="413" alt="Screen_Shot_2022-05-12_at_7 41 44_PM (1)" src="https://user-images.githubusercontent.com/30930688/170873524-50990be1-a0db-4a69-af3c-eb1287448648.png">
+
 
 now run `locale-gen` with root privileges, reboot and you are good to go!
 
