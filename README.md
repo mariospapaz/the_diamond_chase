@@ -14,8 +14,9 @@ The Evil Teacher grants freedom to any student that gets the self manipulated Di
 `(You) Mpampis Poteridis` and thy best friend  `Malphoes Loukas`  accept the challenge.
 
 ## Showcase
-<img src="/.github/map1.png" width=320 height=230>
-<img src="/.github/map2.png" width=320 height=230>
+![Screen Shot 2022-05-29 at 4 50 52 PM](https://user-images.githubusercontent.com/30930688/170873445-b3bc6d52-bbea-4ec1-9674-cb566c1ffd6b.png)
+![map2](https://user-images.githubusercontent.com/30930688/170873497-680a1265-464b-4b52-a9f4-e4d93ce3c298.png)
+
 
 ## Note
 Source Code will be released after 6th June. Stay tuned!
@@ -28,9 +29,9 @@ User must have `el_GR.UTF8` enabled in `/etc/locale.conf` in order to play the g
 Do you not have Greek preinstalled in your computer? that is okay here is a guide!
 Edit `/etc/locale.conf`, find and uncomment all `el_GR.` from the script.
 
+<img width="280" alt="Screen_Shot_2022-05-12_at_7 44 18_PM" src="https://user-images.githubusercontent.com/30930688/170873417-a03bf96d-18da-453a-b0f9-7ec38cb3920b.png">
 
-<img src="/.github/guide1.png" width=320 height=230>
-<img src="/.github/guide2.png" width=320 height=230>
+<img width="280" alt="Screen_Shot_2022-05-12_at_7 44 18_PM" src="https://user-images.githubusercontent.com/30930688/170873428-34d99fdf-84a3-4e4c-9e88-0bb44fc8840e.png">
 
 now run `locale-gen` with root privileges, reboot and you are good to go!
 
