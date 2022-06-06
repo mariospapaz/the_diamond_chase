@@ -19,7 +19,7 @@ The Evil Teacher grants freedom to any student that gets the self manipulated Di
 
 
 ## Note
-Source Code will be released after 6th June. Stay tuned!
+AI Algorithm is bad and I am not gonna bother to improve it :D
 
 
 ## Warning
