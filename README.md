@@ -14,8 +14,8 @@ The Evil Teacher grants freedom to any student that gets the self manipulated Di
 `(You) Mpampis Poteridis` and thy best friend  `Malphoes Loukas`  accept the challenge.
 
 ## Showcase
-![Screen Shot 2022-05-29 at 4 50 52 PM](https://user-images.githubusercontent.com/30930688/170873445-b3bc6d52-bbea-4ec1-9674-cb566c1ffd6b.png)
-![map2](https://user-images.githubusercontent.com/30930688/170873497-680a1265-464b-4b52-a9f4-e4d93ce3c298.png)
+![image](https://user-images.githubusercontent.com/30930688/173535101-d80248ac-b0db-4d67-a5fc-ea59e7160a0e.png)
+
 
 
 ## Note
