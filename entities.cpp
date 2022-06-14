@@ -35,10 +35,12 @@ void Entity::s_rand_pos()
     do {
         local_x = rand() % map_x;
         local_y = rand() % map_y;
-        if( 
-            (map[local_y][local_x] != '*') && (map[local_y][local_x - 1] != '*') && (map[local_y][local_x + 1] != '*') &&
-            (4 < local_x < map_x - 3) && 
-            (4 < local_y < map_y - 3) 
+        if(  
+            (local_x > 3) && (local_x < map_x - 3) &&
+            (local_y > 3) && (local_y < map_y - 3) && 
+            (map[local_y - 1][local_x - 1] != '*') && (map[local_y - 1][local_x] != '*') && (map[local_y - 1][local_x + 1] != '*') &&
+            (map[local_y][local_x - 1] != '*') && (map[local_y][local_x] != '*') && (map[local_y][local_x + 1] != '*') &&
+            (map[local_y + 1][local_x - 1] != '*') && (map[local_y + 1][local_x] != '*') && (map[local_y + 1][local_x + 1] != '*')
         )
             break;    
             

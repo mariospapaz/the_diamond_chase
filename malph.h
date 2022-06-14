@@ -14,11 +14,11 @@ class Malph: public Moving
 
         virtual ~Malph();
 
-        void update();
+        void update(const int&, const int&);
 
         void make_path(const int&, const int&);
 
-        void movement();
+        void movement(const int&, const int&);
 
 };
 

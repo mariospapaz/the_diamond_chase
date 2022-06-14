@@ -6,7 +6,7 @@
 Engine::Engine(const std::string& file_path): map_w(0), map_h(0), moves(0), d_will_mvin(0), game(true)
 {   
     load_map(file_path);
-    window = newwin(map_h, map_w, map_h/3, map_w - map_w/3 - 1);
+    window = newwin(map_h, map_w, map_h/3, map_w - map_w/3 - 12);
     setup_credits();
     generate_map();
     d_will_mvin = rand() % map_w + map_h + 1;
@@ -77,10 +77,7 @@ void Engine::load_map(const std::string& path)
     }
 }
 
-void Engine::add_text(int y, int x, const char* txt)
-{
-    mvwaddstr(window, y, x, txt);
-}
+void Engine::add_text(int y, int x, const char* txt){ mvwaddstr(window, y, x, txt); }
 
 void Engine::update()
 {
@@ -100,7 +97,7 @@ void Engine::update()
             moves++;
             M->update(ch);
         
-            L->update();
+            L->update(G->get_y(), G->get_x());
 
             G->update();
             

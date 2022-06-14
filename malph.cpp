@@ -1,4 +1,5 @@
 #include "./malph.h"
+#include <curses.h>
 
 Malph::Malph(std::vector<std::string> map, WINDOW* win, int my, int mx):
     Moving(map, win, GREEN_OUTFIT, "L", my, mx){}
@@ -18,67 +19,60 @@ void Malph::make_path(const int& dy, const int& dx)
             2: Αριστερά
             3: Δεξιά
         */
-
         path.push_back(std::vector<int>());
         for(int col = 0; col < map[0].length(); col++)
         {
-            if(col > dx)
-            {
-                path[row].push_back(2);
-            }
-            else if (col == dx) {
-                if(row > dy)
-                {
-                    path[row].push_back(0);
+            if(map[row][col] == '*')
+                continue;
+
+            if(row > dy) {
+                path[row].push_back(0);
+            } else if (row == dy) {
+                if(col > dx) {
+                    path[row].push_back(2);
+                } else {
+                    path[row].push_back(3);
                 }
-                else
-                {
-                    path[row].push_back(1);
-                }
-            }
-            else if (col < dx) {
-                path[row].push_back(3);
+            } else if (row < dy) {
+                path[row].push_back(1);
             }
         }
     }
 }
 
-void Malph::movement() 
+void Malph::movement(const int& dy, const int& dx) 
 {
-    
-    switch(path[y][x])
-    {
-        case 0:
-            move_up();
-            break;
-
-        case 1:
-            move_down();
-            break;
-        case 2:
-            move_left();
-            break;
-
-        case 3:
-            move_right();
-            break;
+    if(check_right() == false){
+        (dy <= y) ? move_down() : move_up();
+    } else if (check_left() == false){
+        (dy <= y) ? move_down() : move_up();
+    } else if (check_up() == false) {
+        (dx <= x) ? move_left() : move_right();
+    } else if (check_down() == false) {
+        (dx <= x) ? move_left() : move_right();
+    } else {
+        switch(path[y][x])
+        {
+            case 0:
+                move_up();
+                break;
+            case 1:
+                move_down();
+                break;
+            case 2:
+                move_left();
+                break;
+            case 3:
+                move_right();
+                break;
+        }
     }
-
-    if(check_right() == false)
-        move_down();
-    
-    if(check_left() == false)
-        move_up();
-
-    if(check_up() == false)
-        move_left();
-
-    if(check_down() == false)
-        move_right();
 }
 
-void Malph::update()
+void Malph::update(const int& dy, const int& dx)
 {  
-   movement();
+   movement(dy, dx);
    redraw_entity();
+
+   mvwprintw(win, 1, 1, "(%d, %d)", x, dx);
 }
